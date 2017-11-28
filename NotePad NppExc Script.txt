@@ -1,0 +1,15 @@
+//save current file
+NPP_SAVE
+ 
+//Java location and version:
+//Do not add a \ to the end of the JAVAPATH
+set local JAVAPATH=C:\Program Files
+//This is the version in the path above
+set local JAVAVER=jdk1.8.0_152
+
+//Java location and version:
+set local JAVAPATH=C:\Program Files
+set local JAVAVER=jdk1.8.0_152
+
+cd "$(CURRENT_DIRECTORY)"
+"$(JAVAPATH)\java\$(JAVAVER)\bin\java"  -classpath "$(CURRENT_DIRECTORY)" "$(NAME_PART)"
